@@ -2,14 +2,46 @@
 <html>
     <head>
         <title>
-            WAGWAN GENTLEMEN
+            <title>Sign In</title>
+            <link rel="stylesheet" type="text/css" href="/css/signin.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/boxicons.min.css">
         </title>
     </head>
     <body>
         <h1>
-            test test test test test test
+            
         </h1>
 
+        <button type="submit" onclick="saveCaptain(event)">submit</button>
+                
+
+
+        
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-outline-light btn_design" id="addUserBtn">Sign in</button>
+
+                    <!-- Register buttons -->
+                    <div class="text-center mt-2">
+                        <p>Not a member? <a href="/SignUp" class="text-white">Register</a>
+                        </p>
+                    </div>
+        <script>
+            function saveCaptain(event) {
+                event.preventDefault();
+                var captain = document.getElementById("captain").value;
+                localStorage.setItem("captain", captain);
+                return false;
+            }
+            const inputField = document.getElementById("savedInput");
+            const saveButton = document.getElementById("addUserBtn");
+    
+            // When the save button is clicked, store the input in local storage
+            saveButton.addEventListener("click", () => {
+                const input = inputField.value;
+                localStorage.setItem("savedInput", input);
+            });
+        </script>
 
     </body>
 
