@@ -16,7 +16,9 @@
         <button type="Log in" onclick="saveCaptain(event)">Log in</button>
 
 
-
+        <div class="container">
+            <div class="box bg-success">
+                <form id="log" action="/signin" method="POST">
         
                     <!-- Submit button -->
                     <button type="submit" class="btn btn-outline-light btn_design" id="addUserBtn">Sign in</button>
@@ -26,6 +28,9 @@
                         <p>Not a member? <a href="/SignUp" class="text-white">Register</a>
                         </p>
                     </div>
+                </form>
+            </div>
+        </div>
         <script>
             function saveCaptain(event) {
                 event.preventDefault();
