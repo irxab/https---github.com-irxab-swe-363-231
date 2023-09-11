@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--artical?-->
         
         <title>Sign In</title>   
-           <!--later i should put an icon for the web
-        <link rel="stylesheet" href="assets/style.css">-->
-        
-
+        <link rel="stylesheet" href="style.css">
+           
         <meta name="description" content="business page">
         <meta name="keywords" content="phones, ipads, labtops">
         <meta name="author" content="Abdullah">
-        <meta http-equiv="refresh" content="30.0">
-        <!--Optional
+        <meta http-equiv="refresh" content="120.0   ">
+        <!--Optional its just for mobile
         <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
         
     </head>
     <body>
-        <h1>    
+        <link rel="stylesheet" href="style.css">
+        <header class="header-wrap"> 
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="left-top">
+                        <ul class="left-links list-line">
+                            <li class="mobile-menu-wrap" style="transform: translate(0px, 0px); opacity: 1;">
+                                <div class="mobile-menu">
+                                    <span class="nav-icon">
+
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li style="transform: translate(0px, 0px); opacity: 1;">
+                                <a href="Store.html">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>    
             <img src="assets/WELCOME.png" alt="WELCOME'  So I do " width="200">
-        </h1>
-        <h1>
+        </header>
+        <nav>
             This page is made for my business
-        </h1>
-        <div class="container">
+        </nav>
+        <section>
+        <div class="container"> 
+        
             <div class="box bg-success">
                 <form id="log" action="Store.html" method="POST">
                     <!-- Email Input -->
@@ -34,13 +58,14 @@
                     <label for="Password">Password:</label>
                     <input type="password" id="password" name="password" required>
                     <br><br>
-                    
+            
                     <!-- Log in  button    handle if he didnt fill the email and the password-->
                     <button type="submit" n onclick="location.href='Log-in.html'" >Log in</button>
-        
+                </form>
+        </section>
                     <!-- sign in button    i could use some action later HOW TO PRESS A BUTTON AND GO TO ANOTHER PAGE? -
                     <button type="submit" >Sign in</button> -->
-
+                <footer>
                     <!-- Register buttons -->
                     <div class="text-center mt-2">
                         <p>Not a member? <a href="/SignUp.html" class="text-white">Register</a> 
@@ -50,7 +75,8 @@
                         <p>To contact us dont press this -><a href="/Contact.html" class="text-white">Contact</a>
                         </p>
                     </div>
-                </form>
+                </footer>
+                
             </div>
         </div>
         
