@@ -10,9 +10,51 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    color: green;
+
+
+nav li{
+    display: inline;
+    margin-left: 8px;
 }
+nav a{
+    text-decoration: none;
+}
+nav ul li:first-child a{
+  text-decoration:underline;
+  color:#3e4749;
+}
+
+nav ul{
+    display:inline;
+}
+a{
+    color: green
+}
+
+a:hover {
+    cursor:pointer;
+  }
+  
+  input {
+    height:20px;
+  }
+
+  input ([type="text"]){
+    border: 2px solid lightgray;
+  }
+  
+  input[name="message"]{
+    height:50px;
+  }
+
+::selection {
+    background-color: rgb(187, 0, 255);
+  }
+
+tbody tr:nth-child(){
+    background-color: #879499;
+  }
+
 tbody {
     font-size: 95%;
     font-style: italic;
@@ -20,4 +62,43 @@ tbody {
   
   tfoot {
     font-weight: bold;
+  }
+header{
+    background-color: #879499;
+    padding: 40px;
+}
+
+body{
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+
+thead{
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #FFD700;
+    border: 1px solid black;
+    color: black;
+  }
+  
+td.top {
+    background-color: #FFD700;
+}
+
+em{
+    color: blue;
+    background-color: #FFD700;
+}
+
+h2 {
+    font-family: sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+  }
+
+  tbody tr:hover, tbody tr:hover td{
+    background-color:lightcyan;
   }
