@@ -1,28 +1,27 @@
-body{
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: rgb(255, 255,255);
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*this segment is related to the head and every thing that
+related to it*/
+.context_Mobile_accessory {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: black;
+  
 }
-
-
 nav li{
     display: inline;
-    margin-left: 8px;
 }
-nav a{
-    text-decoration: none;
+nav ul li a{
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    color: black;
 }
-nav ul li:first-child a{
-  text-decoration:underline;
-  color:#3e4749;
+nav ul li:nth-child() a{
+  left: 276px;
 }
+
 
 nav ul{
     display:inline;
@@ -35,70 +34,18 @@ a:hover {
     cursor:pointer;
   }
   
-  input {
-    height:20px;
-  }
+  /*This segment for the body and every thing that related to 
+  the body*/
 
-  input ([type="text"]){
-    border: 2px solid lightgray;
-  }
-  
-  input[name="message"]{
-    height:50px;
-  }
-
-::selection {
-    background-color: rgb(187, 0, 255);
-  }
-
-tbody tr:nth-child(){
-    background-color: #879499;
-  }
-
-tbody {
-    font-size: 95%;
-    font-style: italic;
-  }
-  
-  tfoot {
-    font-weight: bold;
-  }
-header{
-    background-color: #879499;
-    padding: 40px;
+  body{
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(255, 255,255);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body{
-    font-family: sans-serif,Arial, Helvetica, sans-serif;
-}
-
-thead{
-    text-transform: uppercase;
-}
-
-td {
-    background-color: #FFD700;
-    border: 1px solid black;
-    color: black;
-  }
-  
-td.top {
-    background-color: #FFD700;
-}
-
-em{
-    color: blue;
-    background-color: #FFD700;
-}
-
-h2 {
-    font-family: sans-serif;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    text-transform: capitalize;
-  }
-
-  tbody tr:hover, tbody tr:hover td{
-    background-color:lightcyan;
-  }
