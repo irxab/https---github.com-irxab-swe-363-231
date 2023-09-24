@@ -1,3 +1,22 @@
+/*This section releted to the animation and any thing related
+to that*/
+
+.loading_Screen{
+  height: 200px;
+  width: 200px;
+  border: 12px solid #8b96a5;
+  border-radius: 50px;
+  border-right-color: blue ;
+  animation: spin 4s 1ms 2s infinite;
+}
+
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+    animation-delay: 2s;
+  }
+}
+
 /*this segment is related to the head and every thing that
 related to it*/
 .context_Mobile_accessory {
@@ -7,45 +26,105 @@ related to it*/
   font-size: 18px;
   line-height: 21.78px;
   color: black;
-  
+  top: 16px;
+  left: 56px;
+}
+.searching_Bar{
+  top: 56px;
+  left: 15px;
+  right: 15px;
+  bottom: 70px;
+  width: 330px;
+  height: 40px;
+  border-radius: 4px;
+  color: #8b96a5;
 }
 nav li{
     display: inline;
 }
-nav ul li a{
-    width: 24px;
-    height: 24px;
-    top: 16px;
-    color: black;
-}
-nav ul li:nth-child() a{
+
+.cart_shopping{
+  top: 16px;
   left: 276px;
+  width: 24px;
+  height: 24px;
+  color: white;
 }
 
+nav img{
+  width: 16px;
+}
+nav:hover ul li a{
+  color: black;
+}
+nav li a{
+  color: rgb(255, 255, 255, 0);
+  
+  
+}
+/*for transition the nav bar*/
+nav ul li:nth-child(1) a{
+  transition: 1s;
+  transition-delay: 0.1s;
+}
+nav ul li:nth-child(2) a{
+  transition: 2s;
+  transition-delay: 0.2s;
+}
+nav ul li:nth-child(3) a{
+  transition: 3s;
+  transition-delay: 0.3s;
+}
+nav ul li:nth-child(4) a{
+  transition: 4s;
+  transition-delay: 0.4s;
+}
 
+nav ul li a:hover{
+  color: black;
+}
 nav ul{
     display:inline;
 }
-a{
-    color: green
-}
+
 
 a:hover {
     cursor:pointer;
   }
+
+
+.type_Items{
+  color: blue;
+  width: 87px;
+  height: 36px;
+  top: 112px;
+  left: 15px;
+  border-style: hidden;
+  border-radius: 6px;
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: center;
+}
   
   /*This segment for the body and every thing that related to 
   the body*/
 
   body{
-    background-color: black;
+    background-color: white;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color: rgb(255, 255,255);
+    color: black;
     text-align: left;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+.shop_Items{
+  position: flex;
 }
