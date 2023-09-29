@@ -1,19 +1,36 @@
 /*This section releted to the animation and any thing related
 to that*/
+.cover{
+  background-color: rgba(255, 255, 225, 1);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hide 1s 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
 
 .loading_Screen{
-  height: 200px;
-  width: 200px;
-  border: 12px solid #8b96a5;
-  border-radius: 50px;
-  border-right-color: blue ;
-  animation: spin 4s 1ms 2s infinite;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  animation: spin 1s infinite, hide 1s 3s forwards;
 }
 
 @keyframes spin {
   100%{
     transform: rotate(360deg);
-    animation-delay: 2s;
+    background-color: blue;
+  }
+}
+
+@keyframes hide {
+  100%{
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
   }
 }
 
