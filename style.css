@@ -15,7 +15,7 @@ to that*/
 
 .loading_Screen{
   background-color: red;
-  height: 50px;
+  height: 60px;
   width: 50px;
   animation: spin 1s infinite, hide 1s 3s forwards;
 }
@@ -36,7 +36,9 @@ to that*/
 
 /*this segment is related to the head and every thing that
 related to it*/
+
 .context_Mobile_accessory {
+  
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -95,6 +97,10 @@ nav ul li:nth-child(3) a{
 nav ul li:nth-child(4) a{
   transition: 4s;
   transition-delay: 0.4s;
+}
+nav ul li:nth-child(5) a{
+  transition: 5s;
+  transition-delay: 0.5s;
 }
 
 nav ul li a:hover{
